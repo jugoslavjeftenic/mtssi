@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic,latin-ext"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/shared.css" />
+
+    <title>mts-si | Linkovi</title>
+</head>
+
+<body>
+    <header class="max-width">
+        <nav aria-label="Main">
+            <a href="http://mts-si.rs/" target="_blank">
+                <img src="./images/mtssi-logo-horizontal.png" alt="mts sistemi i integracije logo" />
+            </a>
+            <div class="hamburger" onclick="mobileMenu()">
+                <img src="./images/icon-hamburger.svg" alt="navigation menu toggle" />
+            </div>
+            <ul class="navigation">
+                <li><a href="./index.html">INFO</a></li>
+                <li><a class="active" href="./linkovi.html">LINKOVI</a></li>
+                <li><a href="./putninalog.html">PUTNI NALOG</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1 class="max-width">Linkovi</h1>
+    </section>
+
+    <main class="max-width">
+        <section class="margin-bottom">
+            <p><span class="bold">HP Service Manager</span></p>
+            <p>
+                <a href="http://kasrvmweb.it.telekom.yu/sm/index.do"
+                    target="_blank">http://kasrvmweb.it.telekom.yu/sm/index.do</a> (menadžment incidenta)
+            </p>
+            <p>
+                <a href="http://kasrvmweb.it.telekom.yu/sm/ess.do"
+                    target="_blank">http://kasrvmweb.it.telekom.yu/sm/ess.do</a> (otvaranje incidenta)
+            </p>
+        </section>
+        <section class="margin-bottom">
+            <p><span class="bold">LAPS</span></p>
+            <p>
+                <a href="https://laps.telekom.rs/" target="_blank">https://laps.telekom.rs/</a>
+            </p>
+        </section>
+        <section class="margin-bottom">
+            <p><span class="bold">IT za Vas</span></p>
+            <p>
+                <a href="https://telekomsrbija.sharepoint.com/sites/nassvet-itzavas/Stranice/Home.aspx"
+                    target="_blank">https://telekomsrbija.sharepoint.com/sites/nassvet-itzavas/Stranice/Home.aspx</a>
+            </p>
+        </section>
+        <section class="margin-bottom">
+            <p>
+                <span class="bold">kais</span>
+            </p>
+            <p>
+                \\kais1<br>
+                \\kais2
+            </p>
+        </section>
+        <section class="margin-bottom">
+            <p>
+                <span class="bold">SCCM klijent</span>
+            </p>
+            <p>
+                \\kais1\Licenciran\!Aktuelna verzija\SCCM 2012\CM2012Client
+            </p>
+        </section>
+        <section class="margin-bottom">
+            <p><span class="bold">Diskpart</span> (Boot media)</p>
+            <p>
+                - diskpart<br>
+                - select disk &lt;#&gt; (USB flash disk letter)<br>
+                - Clean<br>
+                - Create partition primary<br>
+                - Select partition 1<br>
+                - Active<br>
+                - Format quick fs=FAT32 quick<br>
+                - assign<br>
+                - exit
+            </p>
+        </section>
+        <section class="margin-bottom">
+            <p><span class="bold">Diskpart</span> (HDD)</p>
+            <p>
+                - diskpart<br>
+                - select disk 0<br>
+                - clean<br>
+                - convert gpt<br>
+                - create partition efi size=300<br>
+                - assign letter=k<br>
+                - format quick fs=FAT32<br>
+                - create partition msr size=128<br>
+                - create partition primary<br>
+                - assign letter=c<br>
+                - format quick fs=NTFS<br>
+                - exit
+            </p>
+        </section>
+        <section class="margin-bottom">
+            <p class="bold">Ime računara</p>
+            <p>
+                DUSU123456<br>
+                D - desktop<br>
+                L - laptop<br>
+                L - nema office<br>
+                D - Office 2016<br>
+                U - Office 365<br>
+                SU - grad<br>
+                VN - video nadzor<br>
+                123456 - podinventarski broj<br>
+            </p>
+        </section>
+        <section class="margin-bottom">
+            <p class="bold">Folderi za backup</p>
+            <p>
+                C:\Users\username\AppData\Local\Microsoft\Outlook<br>
+                C:\Users\username\AppData\Roaming\Microsoft\Signatures<br>
+                C:\User\username\Documents\Outlook files<br>
+                C:\User\username\Desktop<br>
+                C:\User\username\Documents<br>
+                C:\User\username\Downloads<br>
+                C:\User\username\Favorites<br>
+                C:\User\username\Pictures<br>
+                C:\User\username\Videos<br>
+            </p>
+        </section>
+        <section class="margin-bottom">
+            <p><span class="bold">Telekom aplikacije</span> (VPN)</p>
+            <p>
+                Interni portal
+                <a href="http://www.mojportal.telekom.rs/" target="_blank">http://www.mojportal.telekom.rs/</a>
+            </p>
+            <p>
+                Pronađi kolegu
+                <a href="http://organizacija.portal.telekom.rs/EmployeeSearch.aspx"
+                    target="_blank">http://organizacija.portal.telekom.rs/EmployeeSearch.aspx</a>
+            </p>
+            <p>
+                Intraweb
+                <a href="http://intraweb.telekom.rs/" target="_blank">http://intraweb.telekom.rs/</a>
+            </p>
+            <p>
+                rapps
+                <a href="https://rapps.telekom.rs/uniquesiga5a28467897f1710bda250073c10fe5c/uniquesig0/SecureRemoteAppsPortalHomePage/"
+                    target="_blank">https://rapps.telekom.rs/uniquesiga5a28467897f1710bda250073c10fe5c/uniquesig0/SecureRemoteAppsPortalHomePage/</a>
+            </p>
+            <p>
+                TIS
+                <a href="http://appservers.it.telekom.yu/forms/frmservlet?config=ccbs"
+                    target="_blank">http://appservers.it.telekom.yu/forms/frmservlet?config=ccbs</a>
+            </p>
+            <p>
+                Prisutnost
+                <a href="http://appservers.it.telekom.yu/forms/frmservlet?config=evrop"
+                    target="_blank">http://appservers.it.telekom.yu/forms/frmservlet?config=evrop</a>
+            </p>
+            <p>
+                Vascom
+                <a href="http://vascom/BoxPaket.aspx" target="_blank">http://vascom/BoxPaket.aspx</a>
+            </p>
+            <p>
+                Siebel
+                <a href="https://crm.telekom.rs/" target="_blank">https://crm.telekom.rs/</a>
+            </p>
+            <p>
+                MTS CSI
+                <a href="https://mtscsi.telekom.rs/Web/" target="_blank">https://mtscsi.telekom.rs/Web/</a>
+            </p>
+            <p>
+                Sharepoint
+                <a href="http://sharepoint2/default.aspx" target="_blank">http://sharepoint2/default.aspx</a>
+            </p>
+        </section>
+        <section class="margin-bottom">
+            <p><span class="bold">Kontakti distributivnih grupa</span></p>
+            <p>
+                <a href="mailto:it.zahtevi.hardver@telekom.rs" target="_blank">it.zahtevi.hardver@telekom.rs</a><br>
+                Zahtevi za zamenu računara i proveru plana nabavke novog računara (fwd:incident+ime i
+                prezime+radbr+predmet zahteva).
+            </p>
+            <p>
+                <a href="mailto:it.magacin@telekom.rs" target="_blank">it.magacin@telekom.rs</a><br>
+                Obezbeđivanje zamenskog računara dok je korisnikov na servisu.
+            </p>
+            <p>
+                <a href="mailto:it.mps@telekom.rs" target="_blank">it.mps@telekom.rs</a><br>
+                Zamena štampača (fwd:incident+ime i prezime+radbr+opis zahteva).<br>
+                Ako zahtev stigne preko podrške tehničar treba da da svoje mišljenje da li ima mogućnosti a onda mps
+                daje saglasnost.
+            </p>
+            <p>
+                <a href="mailto:it.prezaduzenje.adm@telekom.rs" target="_blank">it.prezaduzenje.adm@telekom.rs</a><br>
+                Dispečerski nalozi.
+            </p>
+            <p>
+                <a href="http://kasrvmweb.it.telekom.yu/sm/ess.do"
+                    target="_blank">http://kasrvmweb.it.telekom.yu/sm/ess.do</a><br>
+                Prezaduženje računarske opreme.
+            </p>
+            <p>
+                <a href="mailto:LJR.otkup.PC@telekom.rs" target="_blank">LJR.otkup.PC@telekom.rs</a><br>
+                Otkup rashodovane opreme.
+            </p>
+        </section>
+    </main>
+
+    <script lang="javascript" src="./js/shared.js"></script>
+</body>
+
+</html>
